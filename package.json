@@ -1,0 +1,27 @@
+{
+  "name": "test-api",
+  "description": "CI&T challenge of API test with Frisby.js",
+  "author": "Larissa Alves <larissaalves188@gmail.com> (https://www.linkedin.com/in/larissa-alves-9a6849b2/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lariSilva/test-api.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "posttest": "allure generate --clean",
+    "report": "allure open"
+  },
+  "license": "MIT",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-allure/dist/setup"
+    ]
+  },
+  "dependencies": {
+    "allure-commandline": "^2.9.0",
+    "faker": "^4.1.0",
+    "frisby": "^2.1.2",
+    "jest": "^24.8.0",
+    "jest-allure": "^0.1.1"
+  }
+}
